@@ -1,0 +1,68 @@
+---
+layout: base.njk
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="portrait">
+      {# PLACEHOLDER: add a photo at src/images/abhay.jpg and replace this monogram with <img src="/images/abhay.jpg" alt="Abhay Inamdar"> #}
+      <span class="monogram" aria-hidden="true">AI</span>
+    </div>
+    <div>
+      <p class="eyebrow">{{ profile.headline }} · {{ profile.current }}</p>
+      <h1>Abhay Inamdar</h1>
+      {% for p in profile.intro %}<p class="lead">{{ p }}</p>{% endfor %}
+      <p class="actions">
+        <a class="button" href="/profile/">See my full profile</a>
+        <a class="button ghost" href="/articles/">Read my articles</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" aria-label="Highlights"><div class="stats">
+  {% for s in profile.stats %}
+  <div class="stat"><strong>{{ s.value }}</strong><span>{{ s.label }}</span></div>
+  {% endfor %}
+</div></section>
+
+<section class="wrap section">
+  <h2>What I work on</h2>
+  <div class="cards">
+    {% for e in profile.expertise %}
+    <div class="card">
+      <h3>{{ e.area }}</h3>
+      <p>{{ e.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section">
+  <h2>Companies I have worked with</h2>
+  <p class="company-line">
+    {% for job in profile.experience %}<span>{{ job.company }}</span>{% endfor %}
+  </p>
+  <p><a href="/profile/">What I did at each company →</a></p>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <h2>Latest articles</h2>
+    <a href="/articles/">All articles →</a>
+  </div>
+  <ul class="post-list">
+    {% for post in collections.articles | limit(4) %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+      <p>{{ post.data.summary }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap section contact">
+  <h2>Get in touch</h2>
+  <p>The best way to reach me is on LinkedIn.</p>
+  <p><a class="button" href="{{ site.linkedin }}" rel="noopener">Message me on LinkedIn</a></p>
+</section>

@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Articles
+permalink: /articles/
+summary: Articles by Abhay Inamdar on pharmaceutical engineering, aseptic manufacturing, capital projects and plant performance.
+---
+<section class="wrap narrow page-head">
+  <h1>Articles</h1>
+  <p class="lead">Notes from 30+ years of building and running pharmaceutical plants: aseptic design, compliance, projects and plant performance.</p>
+</section>
+<section class="wrap narrow">
+  <ul class="post-list">
+    {% for post in collections.articles %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+      <p>{{ post.data.summary }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

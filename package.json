@@ -1,0 +1,16 @@
+{
+  "name": "abhayinamdar-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal website of Abhay Inamdar",
+  "scripts": {
+    "start": "eleventy --serve --port 8080",
+    "build": "eleventy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  }
+}

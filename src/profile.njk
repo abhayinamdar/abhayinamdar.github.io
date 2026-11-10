@@ -1,0 +1,94 @@
+---
+layout: base.njk
+title: Profile
+permalink: /profile/
+summary: Career, expertise, projects, education and awards of Abhay Inamdar, pharmaceutical engineering and capital projects leader.
+---
+<section class="wrap narrow page-head">
+  <p class="eyebrow">{{ profile.headline }} · {{ profile.current }}</p>
+  <h1>Profile</h1>
+  <nav class="toc" aria-label="On this page">
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Key projects</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+  </nav>
+</section>
+
+<section class="wrap narrow section" id="about">
+  <h2>About</h2>
+  {% for p in profile.about %}<p>{{ p }}</p>{% endfor %}
+  <p class="muted">Languages: {{ profile.languages | join(", ") }}</p>
+</section>
+
+<section class="wrap narrow section" id="expertise">
+  <h2>Specialties and expertise</h2>
+  {% for e in profile.expertise %}
+  <div class="skill-group">
+    <h3>{{ e.area }}</h3>
+    <p>{{ e.text }}</p>
+    <ul class="tags">{% for i in e.items %}<li>{{ i }}</li>{% endfor %}</ul>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="wrap narrow section" id="experience">
+  <h2>Experience</h2>
+  <ol class="timeline">
+    {% for job in profile.experience %}
+    <li class="job">
+      <h3>{{ job.company }}</h3>
+      {% if job.placeholder %}<p class="placeholder">{{ job.placeholder }}</p>{% endif %}
+      {% for r in job.roles %}
+      <div class="role">
+        {% if r.title %}<p class="role-title">{{ r.title }}</p>{% endif %}
+        {% if r.dates or r.place %}<p class="role-meta">{{ r.dates }}{% if r.dates and r.place %} · {% endif %}{{ r.place }}</p>{% endif %}
+        <ul>{% for pt in r.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+      </div>
+      {% endfor %}
+    </li>
+    {% endfor %}
+    <li class="job">
+      <p class="placeholder">{{ profile.earlyCareerPlaceholder }}</p>
+    </li>
+  </ol>
+</section>
+
+<section class="wrap narrow section" id="projects">
+  <h2>Key projects</h2>
+  <ul class="projects">
+    {% for p in profile.projects %}
+    <li>
+      <h3>{{ p.name }}</h3>
+      <p class="role-meta">{{ p.where }} · {{ p.dates }}</p>
+      <p>{{ p.detail }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap narrow section" id="education">
+  <h2>Education</h2>
+  <ul class="plain-list">
+    {% for e in profile.education %}
+    <li><strong>{{ e.school }}</strong><span>{{ e.degree }}</span><span class="muted">{{ e.dates }}</span></li>
+    {% endfor %}
+  </ul>
+  <h2 class="sub">Certifications</h2>
+  <ul class="plain-list">
+    {% for c in profile.certifications %}
+    <li><strong>{{ c.name }}</strong><span>{{ c.by }}</span><span class="muted">{{ c.date }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="wrap narrow section" id="awards">
+  <h2>Awards and recognition</h2>
+  <ul class="plain-list">
+    {% for a in profile.awards %}
+    <li><strong>{{ a.name }}</strong><span>{{ a.by }} · {{ a.date }}</span>{% if a.note %}<span class="muted">{{ a.note }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
