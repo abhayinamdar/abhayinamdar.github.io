@@ -13,19 +13,19 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="{{ bodyClass }}">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="frame header-inner">
-      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">AI</span><span>Abhay Inamdar</span></a>
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">A</span><span>Abhay Inamdar</span></a>
       <nav aria-label="Main">
         <a href="/profile/" {% if page.url == "/profile/" %}aria-current="page"{% endif %}>Profile</a>
         <a href="/articles/" {% if "/articles/" in page.url %}aria-current="page"{% endif %}>Articles</a>
-        <a href="{{ site.linkedin }}" rel="noopener">LinkedIn</a>
       </nav>
+      <a class="btn small-btn" href="{{ site.linkedin }}" rel="noopener">Connect on LinkedIn</a>
     </div>
   </header>
   <main id="main">

@@ -5,24 +5,46 @@ bodyClass: home
 <section class="hero">
   <div class="frame hero-grid">
     <div class="hero-text">
-      <h1 class="display">Abhay<br>Inamdar</h1>
-      <p class="hero-lede">I design and build the factories that make medicines, and see them through to regulatory approval.</p>
-      <p class="hero-meta">Vice President, Capital Projects &amp; Engineering at Immacule Lifesciences. Over three decades in the pharmaceutical industry, with plants and projects in India, the UAE, Italy, Ireland and Turkey.</p>
+      <p class="label">Abhay Inamdar &middot; Pharma engineering &amp; projects</p>
+      <h1 class="display">Building the <em>factories that make medicines.</em></h1>
+      <p class="hero-lede">Over three decades in the pharmaceutical industry, taking sterile injectable, tablet, biologics and peptide plants from the first drawing to a qualified plant that passes USFDA and EU audits.</p>
       <p class="hero-links">
         <a class="btn" href="/profile/">Read my profile</a>
         <a class="btn quiet" href="/articles/">Read my articles</a>
       </p>
     </div>
     <figure class="hero-figure">
-      {% include "isolator.njk" %}
+      <div class="frame-card">
+        {% include "isolator.njk" %}
+      </div>
+      <figcaption class="pill-caption">Aseptic vial filling isolator</figcaption>
     </figure>
+  </div>
+</section>
+
+<section class="frame">
+  <div class="feature-panel reveal">
+    <div class="fp-text">
+      <p class="label light">Current role</p>
+      <h2>Immacule Lifesciences</h2>
+      <p class="fp-sub">Vice President, Capital Projects &amp; Engineering</p>
+      <p class="fp-body">Leading complex injectable and OSD projects from concept design to commissioning and qualification, with USFDA and EU Annex 1 compliance, automation and energy saving. Mentoring 250+ engineers across sites in Himachal Pradesh.</p>
+      <p class="fp-links"><span class="fp-since">Since September 2025</span><a class="btn light" href="/profile/#immacule">What I do there</a></p>
+    </div>
+    <ul class="fp-facts">
+      <li><strong>30+</strong><span>years in pharma</span></li>
+      <li><strong>{{ profile.experience.length }}</strong><span>companies</span></li>
+      <li><strong>450</strong><span>engineers led at Amneal</span></li>
+      <li><strong>Zero</strong><span>USFDA observations, 2009 and 2017</span></li>
+    </ul>
   </div>
 </section>
 
 <section class="band">
   <div class="frame">
     <div class="band-head reveal">
-      <h2>Career, 1990 to today</h2>
+      <p class="label">Career</p>
+      <h2>Where I have worked.</h2>
       <p>Each bar is a company. Select a name to see what I did there.</p>
     </div>
     <div class="reveal">{% include "gantt.njk" %}</div>
@@ -32,7 +54,8 @@ bodyClass: home
 <section class="band">
   <div class="frame">
     <div class="band-head reveal">
-      <h2>Projects I have led</h2>
+      <p class="label">Projects</p>
+      <h2>Projects I have led.</h2>
       <p>New plants (greenfield), upgrades of running plants (brownfield) and regulatory fixes.</p>
     </div>
     {% set projectsLimit = 6 %}{% include "register.njk" %}
@@ -40,10 +63,11 @@ bodyClass: home
   </div>
 </section>
 
-<section class="band">
+<section class="band band-tint">
   <div class="frame">
     <div class="band-head reveal">
-      <h2>What I know well</h2>
+      <p class="label">Expertise</p>
+      <h2>What I know well.</h2>
     </div>
     <ul class="skills">
       {% for e in profile.expertise %}
@@ -61,7 +85,8 @@ bodyClass: home
 <section class="band">
   <div class="frame">
     <div class="band-head reveal">
-      <h2>Writing</h2>
+      <p class="label">Writing</p>
+      <h2>Latest articles.</h2>
     </div>
     <ul class="posts">
       {% for post in collections.articles | limit(3) %}
