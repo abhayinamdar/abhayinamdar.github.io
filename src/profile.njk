@@ -62,9 +62,9 @@ summary: Career, projects, expertise, education and awards of Abhay Inamdar, pha
 
     <section id="expertise" class="block">
       <h2>Specialties and expertise</h2>
-      <ul class="legend legend-full">
+      <ul class="skills skills-2">
         {% for e in profile.expertise %}
-        <li>
+        <li class="card">
           {% set icon = e.icon %}{% include "icon.njk" %}
           <h3>{{ e.area }}</h3>
           <p>{{ e.text }}</p>

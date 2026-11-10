@@ -21,32 +21,34 @@ bodyClass: home
 
 <section class="band">
   <div class="frame">
-    <div class="band-head">
+    <div class="band-head reveal">
       <h2>Career, 1990 to today</h2>
       <p>Each bar is a company. Select a name to see what I did there.</p>
     </div>
-    {% include "gantt.njk" %}
+    <div class="reveal">{% include "gantt.njk" %}</div>
   </div>
 </section>
 
 <section class="band">
   <div class="frame">
-    <div class="band-head">
+    <div class="band-head reveal">
       <h2>Projects I have led</h2>
       <p>New plants (greenfield), upgrades of running plants (brownfield) and regulatory fixes.</p>
     </div>
-    {% include "register.njk" %}
+    {% set projectsLimit = 6 %}{% include "register.njk" %}
+    <p class="more"><a class="btn quiet" href="/profile/#projects">See all {{ profile.projects.length }} projects</a></p>
   </div>
 </section>
 
 <section class="band">
   <div class="frame">
-    <div class="band-head">
+    <div class="band-head reveal">
       <h2>What I know well</h2>
     </div>
-    <ul class="legend">
+    <ul class="skills">
       {% for e in profile.expertise %}
-      <li>
+      <li class="card reveal">
+        <span class="spine" aria-hidden="true"></span>
         {% set icon = e.icon %}{% include "icon.njk" %}
         <h3>{{ e.area }}</h3>
         <p>{{ e.text }}</p>
@@ -58,22 +60,21 @@ bodyClass: home
 
 <section class="band">
   <div class="frame">
-    <div class="band-head">
+    <div class="band-head reveal">
       <h2>Writing</h2>
-      <p><a href="/articles/">All {{ collections.articles.length }} articles</a></p>
     </div>
-    {% set lead = collections.articles[0] %}
-    <div class="writing">
-      <a class="feature" href="{{ lead.url }}">
-        <time datetime="{{ lead.date | isoDate }}">{{ lead.date | readableDate }}</time>
-        <h3>{{ lead.data.title }}</h3>
-        <p>{{ lead.data.summary }}</p>
-      </a>
-      <ul class="mini-list">
-        {% for post in collections.articles | limit(5) %}{% if not loop.first %}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></li>
-        {% endif %}{% endfor %}
-      </ul>
-    </div>
+    <ul class="posts">
+      {% for post in collections.articles | limit(3) %}
+      <li class="reveal">
+        <a class="card post-card" href="{{ post.url }}">
+          <span class="spine" aria-hidden="true"></span>
+          <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.summary }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="more"><a class="btn quiet" href="/articles/">See all {{ collections.articles.length }} articles</a></p>
   </div>
 </section>

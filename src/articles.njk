@@ -19,12 +19,13 @@ summary: Articles by Abhay Inamdar on pharmaceutical engineering, aseptic manufa
       <section class="year"><h2 class="year-num">{{ y }}</h2><ol class="year-list">
       {% set lastYear = y %}
     {% endif %}
-    <li>
-      <a href="{{ post.url }}">
+    <li class="reveal">
+      <a class="card a-card" href="{{ post.url }}">
+        <span class="spine" aria-hidden="true"></span>
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
         <span class="a-title">{{ post.data.title }}</span>
         <span class="a-sum">{{ post.data.summary }}</span>
       </a>
-      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
     </li>
   {% endfor %}
   </ol></section>
