@@ -18,16 +18,16 @@
       "label": "years in the pharmaceutical industry"
     },
     {
-      "value": "450",
-      "label": "engineers led across sites at Amneal"
-    },
-    {
-      "value": "20 months",
-      "label": "to build a $35M advanced aseptic plant at Dr. Reddy's"
+      "value": "PMP",
+      "label": "certified Project Management Professional"
     },
     {
       "value": "Zero",
-      "label": "USFDA observations in inspections in 2009 and 2017"
+      "label": "USFDA observations in the 2009 and 2017 inspections"
+    },
+    {
+      "value": "First",
+      "label": "UAE company to get USFDA approval, with LIFEPharma in 2017"
     }
   ],
   "expertise": [
@@ -152,7 +152,8 @@
       "years": "2025 – now",
       "short": "Immacule",
       "id": "immacule",
-      "start": 2025.67
+      "start": 2025.67,
+      "logo": "immacule.png"
     },
     {
       "company": "Akums Drugs & Pharmaceuticals Ltd",
@@ -175,7 +176,8 @@
       "years": "2024 – 2025",
       "short": "Akums",
       "id": "akums",
-      "start": 2024.83
+      "start": 2024.83,
+      "logo": "akums.png"
     },
     {
       "company": "Amneal Pharmaceuticals",
@@ -205,7 +207,8 @@
       "years": "2020 – 2024",
       "short": "Amneal",
       "id": "amneal",
-      "start": 2020.83
+      "start": 2020.83,
+      "logo": "amneal.png"
     },
     {
       "company": "Shilpa Medicare Ltd",
@@ -231,7 +234,8 @@
       "years": "2020",
       "short": "Shilpa Medicare",
       "id": "shilpa-medicare",
-      "start": 2020.17
+      "start": 2020.17,
+      "logo": "shilpa-medicare.png"
     },
     {
       "company": "Dr. Reddy's Laboratories",
@@ -293,7 +297,8 @@
       "years": "2009 – 2013, 2018 – 2020",
       "short": "Dr. Reddy's",
       "id": "dr-reddy-s",
-      "start": 2009.33
+      "start": 2009.33,
+      "logo": "dr-reddy-s.png"
     },
     {
       "company": "LIFEPharma FZE",
@@ -320,7 +325,8 @@
       "years": "2016 – 2018",
       "short": "LIFEPharma",
       "id": "lifepharma",
-      "start": 2016.08
+      "start": 2016.08,
+      "logo": "lifepharma.png"
     },
     {
       "company": "Actavis (a Teva brand)",
@@ -345,7 +351,8 @@
       "years": "2013 – 2016",
       "short": "Actavis",
       "id": "actavis",
-      "start": 2013.83
+      "start": 2013.83,
+      "logo": "actavis.png"
     },
     {
       "company": "Alembic Pharmaceuticals Limited",
@@ -369,7 +376,8 @@
       "years": "2008 – 2009",
       "short": "Alembic",
       "id": "alembic",
-      "start": 2008.0
+      "start": 2008.0,
+      "logo": "alembic.png"
     },
     {
       "company": "Aurobindo Pharma Ltd",
@@ -394,7 +402,8 @@
       "years": "2007",
       "short": "Aurobindo",
       "id": "aurobindo",
-      "start": 2007.5
+      "start": 2007.5,
+      "logo": "aurobindo.png"
     },
     {
       "company": "Ranbaxy",
@@ -419,7 +428,8 @@
       "years": "2005 – 2007 (project dates)",
       "short": "Ranbaxy",
       "id": "ranbaxy",
-      "start": 2005.33
+      "start": 2005.33,
+      "logo": ""
     },
     {
       "company": "Wockhardt",
@@ -444,7 +454,8 @@
       "years": "2002 – 2004 (project dates)",
       "short": "Wockhardt",
       "id": "wockhardt",
-      "start": 2002.75
+      "start": 2002.75,
+      "logo": "wockhardt.png"
     }
   ],
   "earlyCareerPlaceholder": "Early career (1990 – 2002): to be added. His LinkedIn does not list roles from these years.",

@@ -2,22 +2,23 @@
 layout: base.njk
 bodyClass: home
 ---
+{% set latest = collections.articles[0] %}
 <section class="hero">
   <div class="frame hero-grid">
     <div class="hero-text">
-      <p class="label">Abhay Inamdar &middot; Pharma engineering &amp; projects</p>
-      <h1 class="display">Building the <em>factories that make medicines.</em></h1>
-      <p class="hero-lede">Over three decades in the pharmaceutical industry, taking sterile injectable, tablet, biologics and peptide plants from the first drawing to a qualified plant that passes USFDA and EU audits.</p>
+      <p class="label">Engineer · Project leader · Mentor</p>
+      <h1 class="display">Pharma engineering leader, <em>from first drawing to final approval.</em></h1>
+      <p class="hero-lede">I'm Abhay Inamdar. For over three decades I have designed, built and run pharmaceutical plants for companies like Dr. Reddy's, Amneal, Actavis and Aurobindo: sterile injectables, tablets, biologics and peptides, in India, the UAE and Europe.</p>
       <p class="hero-links">
-        <a class="btn" href="/profile/">Read my profile</a>
-        <a class="btn quiet" href="/articles/">Read my articles</a>
+        <a class="btn" href="/profile/">Read my profile {% include "arrow.njk" %}</a>
+        <a class="btn quiet" href="{{ latest.url }}">Latest article <span class="dash">—</span> <em class="btn-title">{{ latest.data.short or latest.data.title }}</em></a>
       </p>
     </div>
     <figure class="hero-figure">
-      <div class="frame-card">
-        {% include "isolator.njk" %}
+      <div class="photo-frame">
+        <img src="/images/abhay-inamdar.jpg" alt="Portrait of Abhay Inamdar" width="800" height="880">
       </div>
-      <figcaption class="pill-caption">Aseptic vial filling isolator</figcaption>
+      <figcaption class="pill-caption">Abhay Inamdar</figcaption>
     </figure>
   </div>
 </section>
@@ -25,33 +26,35 @@ bodyClass: home
 <section class="frame">
   <div class="feature-panel reveal">
     <div class="fp-text">
-      <p class="label light">Current role</p>
+      <p class="label light">Right now</p>
       <h2>Immacule Lifesciences</h2>
       <p class="fp-sub">Vice President, Capital Projects &amp; Engineering</p>
       <p class="fp-body">Leading complex injectable and OSD projects from concept design to commissioning and qualification, with USFDA and EU Annex 1 compliance, automation and energy saving. Mentoring 250+ engineers across sites in Himachal Pradesh.</p>
-      <p class="fp-links"><span class="fp-since">Since September 2025</span><a class="btn light" href="/profile/#immacule">What I do there</a></p>
+      <p class="fp-links"><span class="fp-since">Since September 2025</span><a class="btn light" href="/profile/#immacule">What I do there {% include "arrow.njk" %}</a></p>
     </div>
     <ul class="fp-facts">
-      <li><strong>30+</strong><span>years in pharma</span></li>
-      <li><strong>{{ profile.experience.length }}</strong><span>companies</span></li>
-      <li><strong>450</strong><span>engineers led at Amneal</span></li>
-      <li><strong>Zero</strong><span>USFDA observations, 2009 and 2017</span></li>
+      {% for s in profile.stats %}
+      <li><strong>{{ s.value }}</strong><span>{{ s.label }}</span></li>
+      {% endfor %}
     </ul>
   </div>
 </section>
 
-<section class="band">
+<section class="band band-career">
   <div class="frame">
     <div class="band-head reveal">
       <p class="label">Career</p>
-      <h2>Where I have worked.</h2>
-      <p>Each bar is a company. Select a name to see what I did there.</p>
+      <h2>The companies that shaped my work.</h2>
+      <p>Two stints at Dr. Reddy's, plants in India and the UAE, and projects in Italy, Ireland and Turkey.</p>
     </div>
-    <div class="reveal">{% include "gantt.njk" %}</div>
+  </div>
+  <div class="reveal">{% include "marquee.njk" %}</div>
+  <div class="frame">
+    <p class="more"><a class="btn quiet" href="/profile/#experience">Read about each role {% include "arrow.njk" %}</a></p>
   </div>
 </section>
 
-<section class="band">
+<section class="band band-tint">
   <div class="frame">
     <div class="band-head reveal">
       <p class="label">Projects</p>
@@ -59,15 +62,16 @@ bodyClass: home
       <p>New plants (greenfield), upgrades of running plants (brownfield) and regulatory fixes.</p>
     </div>
     {% set projectsLimit = 6 %}{% include "register.njk" %}
-    <p class="more"><a class="btn quiet" href="/profile/#projects">See all {{ profile.projects.length }} projects</a></p>
+    <p class="more"><a class="btn quiet" href="/profile/#projects">See all {{ profile.projects.length }} projects {% include "arrow.njk" %}</a></p>
   </div>
 </section>
 
-<section class="band band-tint">
+<section class="band">
   <div class="frame">
     <div class="band-head reveal">
       <p class="label">Expertise</p>
-      <h2>What I know well.</h2>
+      <h2>My areas of expertise.</h2>
+      <p>The work I have done the most, and know best.</p>
     </div>
     <ul class="skills">
       {% for e in profile.expertise %}
@@ -82,11 +86,12 @@ bodyClass: home
   </div>
 </section>
 
-<section class="band">
+<section class="band band-tint">
   <div class="frame">
     <div class="band-head reveal">
       <p class="label">Writing</p>
       <h2>Latest articles.</h2>
+      <p>I write about aseptic design, compliance and running a plant well. These first appeared on LinkedIn.</p>
     </div>
     <ul class="posts">
       {% for post in collections.articles | limit(3) %}
@@ -96,10 +101,11 @@ bodyClass: home
           <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
           <h3>{{ post.data.title }}</h3>
           <p>{{ post.data.summary }}</p>
+          <span class="read-more">Read article {% include "arrow.njk" %}</span>
         </a>
       </li>
       {% endfor %}
     </ul>
-    <p class="more"><a class="btn quiet" href="/articles/">See all {{ collections.articles.length }} articles</a></p>
+    <p class="more"><a class="btn quiet" href="/articles/">See all {{ collections.articles.length }} articles {% include "arrow.njk" %}</a></p>
   </div>
 </section>

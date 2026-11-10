@@ -1,0 +1,18 @@
+{# Company logos that drift slowly across. Hover pauses it. #}
+{% set jobs = profile.experience | sort(false, false, 'start') %}
+<div class="marquee" aria-label="Companies Abhay Inamdar has worked with">
+  <div class="marquee-track">
+    {% for copy in [1, 2] %}
+    <ul class="marquee-list"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+      {% for job in jobs %}
+      <li>
+        <a class="m-item" href="/profile/#{{ job.id }}"{% if copy == 2 %} tabindex="-1"{% endif %}>
+          {% if job.logo %}<img src="/images/logos/{{ job.logo }}" alt="" width="48" height="48" loading="lazy">{% else %}<span class="m-mono" aria-hidden="true">{{ job.short | first }}</span>{% endif %}
+          <span class="m-text"><span class="m-name">{{ job.short }}</span><span class="m-years">{{ job.years | replace(" (project dates)", "") }}</span></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>

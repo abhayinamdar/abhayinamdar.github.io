@@ -1,5 +1,6 @@
 ---
 title: "Air Flow Visualization Studies (AFVS) in an Aseptic Manufacturing Area"
+short: "Air Flow Visualization"
 date: 2025-04-06
 summary: "Airflow visualization studies, often using smoke or mist, are crucial in aseptic isolators to ensure unidirectional airflow and prevent contamination, helping to identify and address potential issues…"
 linkedin: https://www.linkedin.com/pulse/air-flow-visualization-studies-afvs-aseptic-area-abhay-inamdar-pmp--clhgf/
