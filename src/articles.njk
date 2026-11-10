@@ -2,20 +2,31 @@
 layout: base.njk
 title: Articles
 permalink: /articles/
+bodyClass: articles
 summary: Articles by Abhay Inamdar on pharmaceutical engineering, aseptic manufacturing, capital projects and plant performance.
 ---
-<section class="wrap narrow page-head">
-  <h1>Articles</h1>
-  <p class="lead">Notes from 30+ years of building and running pharmaceutical plants: aseptic design, compliance, projects and plant performance.</p>
-</section>
-<section class="wrap narrow">
-  <ul class="post-list">
-    {% for post in collections.articles %}
+<div class="frame">
+  <header class="page-head">
+    <h1>Articles</h1>
+    <p class="page-lede">What I have learned building and running pharmaceutical plants: aseptic design, compliance, projects and plant performance.</p>
+  </header>
+  {% set lastYear = 0 %}
+  <div class="archive">
+  {% for post in collections.articles %}
+    {% set y = post.date.getUTCFullYear() %}
+    {% if y != lastYear %}
+      {% if lastYear != 0 %}</ol></section>{% endif %}
+      <section class="year"><h2 class="year-num">{{ y }}</h2><ol class="year-list">
+      {% set lastYear = y %}
+    {% endif %}
     <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <a href="{{ post.url }}">
+        <span class="a-title">{{ post.data.title }}</span>
+        <span class="a-sum">{{ post.data.summary }}</span>
+      </a>
       <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-      <p>{{ post.data.summary }}</p>
     </li>
-    {% endfor %}
-  </ul>
-</section>
+  {% endfor %}
+  </ol></section>
+  </div>
+</div>

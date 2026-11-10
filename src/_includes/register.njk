@@ -1,0 +1,18 @@
+<div class="register">
+  <div class="r-head" aria-hidden="true">
+    <span>Project</span><span>Company</span><span>Years</span><span>Capital cost</span>
+  </div>
+  <ol class="r-list">
+    {% for p in profile.projects %}
+    <li class="r-row">
+      <div class="r-project">
+        <h3>{{ p.name }}</h3>
+        <p>{{ p.detail }}</p>
+      </div>
+      <div class="r-where"><span class="r-key">Company</span>{{ p.where }}{% if p.country %}<span class="r-country">{{ p.country }}</span>{% endif %}</div>
+      <div class="r-years"><span class="r-key">Years</span>{{ p.dates }}</div>
+      <div class="r-capex"><span class="r-key">Capital cost</span>{% if p.capex %}{{ p.capex }}{% else %}<span class="na" title="Not stated on LinkedIn">–</span>{% endif %}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

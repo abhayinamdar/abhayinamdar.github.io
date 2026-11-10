@@ -1,0 +1,22 @@
+{# Career as a Gantt chart. Scale: 1990 to 2027 (37 years). #}
+<div class="gantt" role="list" aria-label="Career timeline">
+  <div class="g-axis" aria-hidden="true">
+    {% for y in [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025] %}
+    <span style="left: {{ ((y - 1990) / 37 * 100) | round(3) }}%">{{ y }}</span>
+    {% endfor %}
+  </div>
+  <div class="g-row g-early" role="listitem">
+    <div class="g-label"><span class="g-name">Early career</span><span class="g-years">1990 – 2002, details to be added</span></div>
+    <div class="g-track"><span class="g-bar hatch" style="left:0%; width: {{ ((2002.7 - 1990) / 37 * 100) | round(3) }}%"></span></div>
+  </div>
+  {% for job in profile.experience | sort(false, false, 'start') %}
+  <div class="g-row{% if job.id == 'immacule' %} g-current{% endif %}" role="listitem">
+    <a class="g-label" href="/profile/#{{ job.id }}"><span class="g-name">{{ job.short }}</span><span class="g-years">{{ job.years }}</span></a>
+    <div class="g-track">
+      {% for s in job.spans %}
+      <span class="g-bar" style="left: {{ ((s[0] - 1990) / 37 * 100) | round(3) }}%; width: {{ ((s[1] - s[0]) / 37 * 100) | round(3) }}%"></span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

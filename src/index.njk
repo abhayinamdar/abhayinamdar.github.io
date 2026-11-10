@@ -1,68 +1,79 @@
 ---
 layout: base.njk
+bodyClass: home
 ---
 <section class="hero">
-  <div class="wrap hero-inner">
-    <div class="portrait">
-      {# PLACEHOLDER: add a photo at src/images/abhay.jpg and replace this monogram with <img src="/images/abhay.jpg" alt="Abhay Inamdar"> #}
-      <span class="monogram" aria-hidden="true">AI</span>
-    </div>
-    <div>
-      <p class="eyebrow">{{ profile.headline }} · {{ profile.current }}</p>
-      <h1>Abhay Inamdar</h1>
-      {% for p in profile.intro %}<p class="lead">{{ p }}</p>{% endfor %}
-      <p class="actions">
-        <a class="button" href="/profile/">See my full profile</a>
-        <a class="button ghost" href="/articles/">Read my articles</a>
+  <div class="frame hero-grid">
+    <div class="hero-text">
+      <h1 class="display">Abhay<br>Inamdar</h1>
+      <p class="hero-lede">I design and build the factories that make medicines, and see them through to regulatory approval.</p>
+      <p class="hero-meta">Vice President, Capital Projects &amp; Engineering at Immacule Lifesciences. Over three decades in the pharmaceutical industry, with plants and projects in India, the UAE, Italy, Ireland and Turkey.</p>
+      <p class="hero-links">
+        <a class="btn" href="/profile/">Read my profile</a>
+        <a class="btn quiet" href="/articles/">Read my articles</a>
       </p>
     </div>
+    <figure class="hero-figure">
+      {% include "isolator.njk" %}
+    </figure>
   </div>
 </section>
 
-<section class="wrap" aria-label="Highlights"><div class="stats">
-  {% for s in profile.stats %}
-  <div class="stat"><strong>{{ s.value }}</strong><span>{{ s.label }}</span></div>
-  {% endfor %}
-</div></section>
-
-<section class="wrap section">
-  <h2>What I work on</h2>
-  <div class="cards">
-    {% for e in profile.expertise %}
-    <div class="card">
-      <h3>{{ e.area }}</h3>
-      <p>{{ e.text }}</p>
+<section class="band">
+  <div class="frame">
+    <div class="band-head">
+      <h2>Career, 1990 to today</h2>
+      <p>Each bar is a company. Select a name to see what I did there.</p>
     </div>
-    {% endfor %}
+    {% include "gantt.njk" %}
   </div>
 </section>
 
-<section class="wrap section">
-  <h2>Companies I have worked with</h2>
-  <p class="company-line">
-    {% for job in profile.experience %}<span>{{ job.company }}</span>{% endfor %}
-  </p>
-  <p><a href="/profile/">What I did at each company →</a></p>
-</section>
-
-<section class="wrap section">
-  <div class="section-head">
-    <h2>Latest articles</h2>
-    <a href="/articles/">All articles →</a>
+<section class="band">
+  <div class="frame">
+    <div class="band-head">
+      <h2>Projects I have led</h2>
+      <p>New plants (greenfield), upgrades of running plants (brownfield) and regulatory fixes.</p>
+    </div>
+    {% include "register.njk" %}
   </div>
-  <ul class="post-list">
-    {% for post in collections.articles | limit(4) %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-      <p>{{ post.data.summary }}</p>
-    </li>
-    {% endfor %}
-  </ul>
 </section>
 
-<section class="wrap section contact">
-  <h2>Get in touch</h2>
-  <p>The best way to reach me is on LinkedIn.</p>
-  <p><a class="button" href="{{ site.linkedin }}" rel="noopener">Message me on LinkedIn</a></p>
+<section class="band">
+  <div class="frame">
+    <div class="band-head">
+      <h2>What I know well</h2>
+    </div>
+    <ul class="legend">
+      {% for e in profile.expertise %}
+      <li>
+        {% set icon = e.icon %}{% include "icon.njk" %}
+        <h3>{{ e.area }}</h3>
+        <p>{{ e.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="frame">
+    <div class="band-head">
+      <h2>Writing</h2>
+      <p><a href="/articles/">All {{ collections.articles.length }} articles</a></p>
+    </div>
+    {% set lead = collections.articles[0] %}
+    <div class="writing">
+      <a class="feature" href="{{ lead.url }}">
+        <time datetime="{{ lead.date | isoDate }}">{{ lead.date | readableDate }}</time>
+        <h3>{{ lead.data.title }}</h3>
+        <p>{{ lead.data.summary }}</p>
+      </a>
+      <ul class="mini-list">
+        {% for post in collections.articles | limit(5) %}{% if not loop.first %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>

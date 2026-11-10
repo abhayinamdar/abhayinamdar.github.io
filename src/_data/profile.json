@@ -13,41 +13,114 @@
     "I hold a B.E. in Electronics Engineering and an MBA, and I am a certified Project Management Professional (PMP). I also hold certifications in Safety Systems and Process Safety Management."
   ],
   "stats": [
-    { "value": "30+", "label": "years in the pharmaceutical industry" },
-    { "value": "450", "label": "engineers led across sites at Amneal" },
-    { "value": "20 months", "label": "to build a $35M advanced aseptic plant at Dr. Reddy's" },
-    { "value": "Zero", "label": "USFDA observations in inspections in 2009 and 2017" }
+    {
+      "value": "30+",
+      "label": "years in the pharmaceutical industry"
+    },
+    {
+      "value": "450",
+      "label": "engineers led across sites at Amneal"
+    },
+    {
+      "value": "20 months",
+      "label": "to build a $35M advanced aseptic plant at Dr. Reddy's"
+    },
+    {
+      "value": "Zero",
+      "label": "USFDA observations in inspections in 2009 and 2017"
+    }
   ],
   "expertise": [
     {
       "area": "Sterile (aseptic) manufacturing",
       "text": "Designing aseptic plants from concept to qualification: filling lines, isolators, lyophilisers, sterilisers and clean utilities.",
-      "items": ["Aseptic facility design", "Isolators", "Complex injectables", "Oncology / cytotoxic", "Peptides & GLP-1", "Biologics (mAbs)", "Inhalers (MDI & DPI)", "Oral solid dose", "API"]
+      "items": [
+        "Aseptic facility design",
+        "Isolators",
+        "Complex injectables",
+        "Oncology / cytotoxic",
+        "Peptides & GLP-1",
+        "Biologics (mAbs)",
+        "Inhalers (MDI & DPI)",
+        "Oral solid dose",
+        "API"
+      ],
+      "icon": "vial"
     },
     {
       "area": "Regulatory compliance & quality",
       "text": "Building and running plants that pass USFDA, EU and other international audits, and fixing gaps when they are found.",
-      "items": ["cGMP", "USFDA compliance", "EU Annex 1", "Remediation & CAPA", "Validation & qualification", "Computer system validation (CSV)", "21 CFR Part 11", "GAMP", "Change control", "Quality by Design"]
+      "items": [
+        "cGMP",
+        "USFDA compliance",
+        "EU Annex 1",
+        "Remediation & CAPA",
+        "Validation & qualification",
+        "Computer system validation (CSV)",
+        "21 CFR Part 11",
+        "GAMP",
+        "Change control",
+        "Quality by Design"
+      ],
+      "icon": "shield"
     },
     {
       "area": "Capital projects",
       "text": "Greenfield and brownfield projects: business case, budget, design, buying, building, commissioning and handover.",
-      "items": ["Capex proposals", "Budgeting & cost control", "Scheduling", "Risk management", "Stakeholder management", "Design engineering & P&IDs", "Utilities & HVAC", "Commissioning & qualification", "PMP"]
+      "items": [
+        "Capex proposals",
+        "Budgeting & cost control",
+        "Scheduling",
+        "Risk management",
+        "Stakeholder management",
+        "Design engineering & P&IDs",
+        "Utilities & HVAC",
+        "Commissioning & qualification",
+        "PMP"
+      ],
+      "icon": "crane"
     },
     {
       "area": "Plant performance & maintenance",
       "text": "Keeping plants running well and getting more out of them.",
-      "items": ["OEE", "TPM", "Autonomous maintenance (Jishu Hozen)", "Predictive maintenance", "Lean Six Sigma", "Kaizen", "Energy saving"]
+      "items": [
+        "OEE",
+        "TPM",
+        "Autonomous maintenance (Jishu Hozen)",
+        "Predictive maintenance",
+        "Lean Six Sigma",
+        "Kaizen",
+        "Energy saving"
+      ],
+      "icon": "gauge"
     },
     {
       "area": "Automation & digital",
       "text": "Bringing automation and data into the factory.",
-      "items": ["Automation", "SCADA", "IoT", "Digitisation", "Industry 4.0", "ASRS warehouses", "Track & trace"]
+      "items": [
+        "Automation",
+        "SCADA",
+        "IoT",
+        "Digitisation",
+        "Industry 4.0",
+        "ASRS warehouses",
+        "Track & trace"
+      ],
+      "icon": "nodes"
     },
     {
       "area": "Safety, leadership & finance",
       "text": "Leading large engineering teams safely, and speaking the language of finance.",
-      "items": ["EHS", "Process safety", "Team leadership", "Financial analysis", "Cash-flow forecasting", "EBITDA", "Strategic planning"]
+      "items": [
+        "EHS",
+        "Process safety",
+        "Team leadership",
+        "Financial analysis",
+        "Cash-flow forecasting",
+        "EBITDA",
+        "Strategic planning"
+      ],
+      "icon": "hat"
     }
   ],
   "experience": [
@@ -69,7 +142,17 @@
             "Leads Corporate Social Responsibility work, including cutting carbon emissions through sustainable practices."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2025.67,
+          2026.9
+        ]
+      ],
+      "years": "2025 – now",
+      "short": "Immacule",
+      "id": "immacule",
+      "start": 2025.67
     },
     {
       "company": "Akums Drugs & Pharmaceuticals Ltd",
@@ -82,7 +165,17 @@
             "Led the preparation of capex proposals for European-market projects in India and overseas (injectables, OSD, warehousing and nutraceuticals), covering market forecasts, cash-flow models, cost breakdowns and timelines, through to Corporate Office approval and CMD sign-off."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2024.83,
+          2025.7
+        ]
+      ],
+      "years": "2024 – 2025",
+      "short": "Akums",
+      "id": "akums",
+      "start": 2024.83
     },
     {
       "company": "Amneal Pharmaceuticals",
@@ -102,7 +195,17 @@
             "Rolled out Lean Six Sigma and predictive maintenance, and set up engineering and project academies with faculty from IIT Gandhinagar."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2020.83,
+          2024.88
+        ]
+      ],
+      "years": "2020 – 2024",
+      "short": "Amneal",
+      "id": "amneal",
+      "start": 2020.83
     },
     {
       "company": "Shilpa Medicare Ltd",
@@ -118,7 +221,17 @@
             "Introduced autonomous maintenance (Jishu Hozen), Poka-yoke, Kaizen and Lean Six Sigma tools such as value stream mapping."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2020.17,
+          2020.88
+        ]
+      ],
+      "years": "2020",
+      "short": "Shilpa Medicare",
+      "id": "shilpa-medicare",
+      "start": 2020.17
     },
     {
       "company": "Dr. Reddy's Laboratories",
@@ -166,7 +279,21 @@
             "Took part in successful regulatory audits by Germany, Brazil and the USFDA."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2009.33,
+          2013.83
+        ],
+        [
+          2018.17,
+          2020.17
+        ]
+      ],
+      "years": "2009 – 2013, 2018 – 2020",
+      "short": "Dr. Reddy's",
+      "id": "dr-reddy-s",
+      "start": 2009.33
     },
     {
       "company": "LIFEPharma FZE",
@@ -183,7 +310,17 @@
             "Headed the greenfield oncology injectable and oral solid dose facility at KIZAD, Abu Dhabi."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2016.08,
+          2018.13
+        ]
+      ],
+      "years": "2016 – 2018",
+      "short": "LIFEPharma",
+      "id": "lifepharma",
+      "start": 2016.08
     },
     {
       "company": "Actavis (a Teva brand)",
@@ -198,7 +335,17 @@
             "Prepared concept documents, user requirements, layouts, scopes of work, business cases, costing and project schedules, and reviewed capex proposals across sites in Europe and Asia."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2013.83,
+          2016.05
+        ]
+      ],
+      "years": "2013 – 2016",
+      "short": "Actavis",
+      "id": "actavis",
+      "start": 2013.83
     },
     {
       "company": "Alembic Pharmaceuticals Limited",
@@ -212,7 +359,17 @@
             "Prepared concepts, layouts (area classification, pressure differentials, equipment and AHU zoning), engineering costing and business cases for capex approval."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2008.0,
+          2009.3
+        ]
+      ],
+      "years": "2008 – 2009",
+      "short": "Alembic",
+      "id": "alembic",
+      "start": 2008.0
     },
     {
       "company": "Aurobindo Pharma Ltd",
@@ -227,7 +384,17 @@
             "Managed a team of 25 across four formulation blocks and their utilities, including a block expansion project."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2007.5,
+          2008.0
+        ]
+      ],
+      "years": "2007",
+      "short": "Aurobindo",
+      "id": "aurobindo",
+      "start": 2007.5
     },
     {
       "company": "Ranbaxy",
@@ -242,7 +409,17 @@
             "Prepared and ran user requirements, datasheets, SOPs and IQ/OQ/PQ protocols for bulk and formulation machines, clean rooms, HVAC, building management and water systems."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2005.33,
+          2007.45
+        ]
+      ],
+      "years": "2005 – 2007 (project dates)",
+      "short": "Ranbaxy",
+      "id": "ranbaxy",
+      "start": 2005.33
     },
     {
       "company": "Wockhardt",
@@ -257,46 +434,217 @@
             "Prepared user requirements, facility drawings, cost estimates and IQ/OQ/PQ protocols, and supported installation, commissioning, qualification, process validation and regulatory audits."
           ]
         }
-      ]
+      ],
+      "spans": [
+        [
+          2002.75,
+          2004.7
+        ]
+      ],
+      "years": "2002 – 2004 (project dates)",
+      "short": "Wockhardt",
+      "id": "wockhardt",
+      "start": 2002.75
     }
   ],
   "earlyCareerPlaceholder": "Early career (1990 – 2002): to be added. His LinkedIn does not list roles from these years.",
   "projects": [
-    { "name": "Octreotide & Lanreotide peptide manufacturing facility (greenfield)", "where": "Amneal · Pharmez, Ahmedabad", "dates": "Jun 2022 – Sep 2023", "detail": "Designed and built a 1.35 lakh sq ft (G+3) site with vial and pre-filled syringe gel filling lines, process skids, utilities, a 1,200-pallet warehouse, labs and packaging, in line with USFDA requirements." },
-    { "name": "Nanosuspension (Paclitaxel) manufacturing set-up (brownfield)", "where": "Dr. Reddy's · FTO-7, Vizag", "dates": "Jun 2019 – Jan 2020", "detail": "Technical due diligence of an R&D-scale facility in Hangzhou, China, then design, buying, installation and commissioning of the process skids, isolator-based vial filling line and lyophiliser." },
-    { "name": "Oncology injectables facility (greenfield)", "where": "LIFEPharma · KIZAD, Abu Dhabi", "dates": "Mar 2016 – Feb 2018", "detail": "Led the project with IPS India and local contractors, and got the master plan approved by Abu Dhabi authorities." },
-    { "name": "MDI and DPI inhaler facility (greenfield) — estimated $55M", "where": "Actavis · Dublin, Ireland", "dates": "Aug 2014 – 2016", "detail": "Concept, layouts, equipment sizing, user requirements, business case and project schedule for US and EU markets." },
-    { "name": "HVAC revamp for a DPI inhaler facility — $5M", "where": "Actavis · Turkey", "dates": "Sep 2014 – Aug 2015", "detail": "Lead project manager, from gap analysis and business case through commissioning, qualification and handover. Appreciated by the client and Actavis management." },
-    { "name": "Cytotoxic injectable expansion (brownfield) — $9M", "where": "Actavis · Nerviano, Milan, Italy", "dates": "Dec 2013 – Feb 2015", "detail": "Technical review of capex proposals, user requirements, layouts and HVAC schematics for cGMP compliance." },
-    { "name": "Advanced aseptic formulation facility (greenfield) — $35M", "where": "Dr. Reddy's", "dates": "Jun 2011 – Jun 2013", "detail": "Annual output of 20 million pre-filled syringes and 10 million vials for US and EU markets, with equipment from Germany, Spain and Italy. Completed in a record 20 months." },
-    { "name": "Cytotoxic injectable & potent facility (brownfield) — $10M", "where": "Dr. Reddy's · Vizag", "dates": "May 2009 – Jun 2013", "detail": "Remediation after USFDA observations: water, HVAC, isolators and lyophiliser upgrades. Completed in record time with zero USFDA observations." },
-    { "name": "Central project cell: oncology, inhaler, ophthalmic and nasal spray projects — $20M", "where": "Alembic", "dates": "Jan 2008 – Apr 2009", "detail": "Concept documents, layouts, costing, schedules and business cases for top management." },
-    { "name": "Imipenem & Cilastatin sterile API and formulation facility (greenfield) — $20M", "where": "Ranbaxy", "dates": "May 2005 – Jun 2007", "detail": "From concept to international regulatory audit, including a lyophiliser with 40 m² shelf area and robotic loading and an antibiotic powder filling line." },
-    { "name": "Biotech formulation facility (greenfield) — $6M", "where": "Wockhardt", "dates": "Oct 2002 – Sep 2004", "detail": "Pre-filled syringes, cartridges and vials: user requirements, drawings, costing, qualification and audit support." }
+    {
+      "name": "Octreotide & Lanreotide peptide manufacturing facility (greenfield)",
+      "where": "Amneal, Pharmez, Ahmedabad",
+      "dates": "Jun 2022 – Sep 2023",
+      "detail": "Designed and built a 1.35 lakh sq ft (G+3) site with vial and pre-filled syringe gel filling lines, process skids, utilities, a 1,200-pallet warehouse, labs and packaging, in line with USFDA requirements.",
+      "capex": "",
+      "country": "India"
+    },
+    {
+      "name": "Nanosuspension (Paclitaxel) manufacturing set-up (brownfield)",
+      "where": "Dr. Reddy's, FTO-7, Vizag",
+      "dates": "Jun 2019 – Jan 2020",
+      "detail": "Technical due diligence of an R&D-scale facility in Hangzhou, China, then design, buying, installation and commissioning of the process skids, isolator-based vial filling line and lyophiliser.",
+      "capex": "",
+      "country": "India (due diligence in China)"
+    },
+    {
+      "name": "Oncology injectables facility (greenfield)",
+      "where": "LIFEPharma, KIZAD, Abu Dhabi",
+      "dates": "Mar 2016 – Feb 2018",
+      "detail": "Led the project with IPS India and local contractors, and got the master plan approved by Abu Dhabi authorities.",
+      "capex": "",
+      "country": "UAE"
+    },
+    {
+      "name": "MDI and DPI inhaler facility (greenfield)",
+      "where": "Actavis, Dublin, Ireland",
+      "dates": "Aug 2014 – 2016",
+      "detail": "Concept, layouts, equipment sizing, user requirements, business case and project schedule for US and EU markets.",
+      "capex": "$55M (est.)",
+      "country": "Ireland"
+    },
+    {
+      "name": "HVAC revamp for a DPI inhaler facility",
+      "where": "Actavis, Turkey",
+      "dates": "Sep 2014 – Aug 2015",
+      "detail": "Lead project manager, from gap analysis and business case through commissioning, qualification and handover. Appreciated by the client and Actavis management.",
+      "capex": "$5M",
+      "country": "Turkey"
+    },
+    {
+      "name": "Cytotoxic injectable expansion (brownfield)",
+      "where": "Actavis, Nerviano, Milan, Italy",
+      "dates": "Dec 2013 – Feb 2015",
+      "detail": "Technical review of capex proposals, user requirements, layouts and HVAC schematics for cGMP compliance.",
+      "capex": "$9M",
+      "country": "Italy"
+    },
+    {
+      "name": "Advanced aseptic formulation facility (greenfield)",
+      "where": "Dr. Reddy's",
+      "dates": "Jun 2011 – Jun 2013",
+      "detail": "Annual output of 20 million pre-filled syringes and 10 million vials for US and EU markets, with equipment from Germany, Spain and Italy. Completed in a record 20 months.",
+      "capex": "$35M",
+      "country": ""
+    },
+    {
+      "name": "Cytotoxic injectable & potent facility (brownfield)",
+      "where": "Dr. Reddy's, Vizag",
+      "dates": "May 2009 – Jun 2013",
+      "detail": "Remediation after USFDA observations: water, HVAC, isolators and lyophiliser upgrades. Completed in record time with zero USFDA observations.",
+      "capex": "$10M",
+      "country": "India"
+    },
+    {
+      "name": "Central project cell: oncology, inhaler, ophthalmic and nasal spray projects",
+      "where": "Alembic",
+      "dates": "Jan 2008 – Apr 2009",
+      "detail": "Concept documents, layouts, costing, schedules and business cases for top management.",
+      "capex": "$20M",
+      "country": "India"
+    },
+    {
+      "name": "Imipenem & Cilastatin sterile API and formulation facility (greenfield)",
+      "where": "Ranbaxy",
+      "dates": "May 2005 – Jun 2007",
+      "detail": "From concept to international regulatory audit, including a lyophiliser with 40 m² shelf area and robotic loading and an antibiotic powder filling line.",
+      "capex": "$20M",
+      "country": ""
+    },
+    {
+      "name": "Biotech formulation facility (greenfield)",
+      "where": "Wockhardt",
+      "dates": "Oct 2002 – Sep 2004",
+      "detail": "Pre-filled syringes, cartridges and vials: user requirements, drawings, costing, qualification and audit support.",
+      "capex": "$6M",
+      "country": ""
+    }
   ],
   "education": [
-    { "school": "Sri Venkateswara University", "degree": "Executive MBA, Project Management", "dates": "2018 – 2020" },
-    { "school": "ICFAI University", "degree": "MBA (PGDBM)", "dates": "2008 – 2011" },
-    { "school": "Walchand College of Engineering, Sangli", "degree": "B.E., Electronics Engineering — First Class", "dates": "1986 – 1990" },
-    { "school": "Laxmanrao Kirloskar Junior College, Palus", "degree": "HSC, Science — Distinction (95.66% in PCM); college topper in Mathematics", "dates": "1984 – 1986" },
-    { "school": "Kirloskar Highschool, Kirloskarwadi", "degree": "SSC — Distinction; National Merit Certificate, Government of Maharashtra", "dates": "1984" }
+    {
+      "school": "Sri Venkateswara University",
+      "degree": "Executive MBA, Project Management",
+      "dates": "2018 – 2020"
+    },
+    {
+      "school": "ICFAI University",
+      "degree": "MBA (PGDBM)",
+      "dates": "2008 – 2011"
+    },
+    {
+      "school": "Walchand College of Engineering, Sangli",
+      "degree": "B.E., Electronics Engineering — First Class",
+      "dates": "1986 – 1990"
+    },
+    {
+      "school": "Laxmanrao Kirloskar Junior College, Palus",
+      "degree": "HSC, Science — Distinction (95.66% in PCM); college topper in Mathematics",
+      "dates": "1984 – 1986"
+    },
+    {
+      "school": "Kirloskar Highschool, Kirloskarwadi",
+      "degree": "SSC — Distinction; National Merit Certificate, Government of Maharashtra",
+      "dates": "1984"
+    }
   ],
   "certifications": [
-    { "name": "Project Management Professional (PMP)®", "by": "Project Management Institute, USA", "date": "Jan 2025 (valid to Jan 2028)" },
-    { "name": "Certification in Financial Management of Projects", "by": "KPMG India", "date": "Jan 2025" },
-    { "name": "CII Certified Professional in Building Energy Management", "by": "CII – Godrej Green Business Centre", "date": "Jul 2020" },
-    { "name": "Claude Powered AI Tools Workshop", "by": "House of Edtech", "date": "Oct 2026" },
-    { "name": "Operational Excellence Foundations; Six Sigma Foundations; Project Management Simplified; Introduction to Data Science; Machine Learning & AI: Advanced Decision Trees", "by": "LinkedIn Learning", "date": "May 2020" }
+    {
+      "name": "Project Management Professional (PMP)®",
+      "by": "Project Management Institute, USA",
+      "date": "Jan 2025 (valid to Jan 2028)"
+    },
+    {
+      "name": "Certification in Financial Management of Projects",
+      "by": "KPMG India",
+      "date": "Jan 2025"
+    },
+    {
+      "name": "CII Certified Professional in Building Energy Management",
+      "by": "CII – Godrej Green Business Centre",
+      "date": "Jul 2020"
+    },
+    {
+      "name": "Claude Powered AI Tools Workshop",
+      "by": "House of Edtech",
+      "date": "Oct 2026"
+    },
+    {
+      "name": "Operational Excellence Foundations; Six Sigma Foundations; Project Management Simplified; Introduction to Data Science; Machine Learning & AI: Advanced Decision Trees",
+      "by": "LinkedIn Learning",
+      "date": "May 2020"
+    }
   ],
   "awards": [
-    { "name": "Indian Achievers Award", "by": "Indian Achievers Forum", "date": "Jul 2023", "note": "For outstanding professional achievement and contribution to nation building." },
-    { "name": "Guest speaker, Pharma 4.0 Nexus", "by": "BlueTech Media", "date": "Mar 2024", "note": "Panel on smart manufacturing, engineering design and predictive maintenance through IoT and data analytics." },
-    { "name": "Chairman Excellence — Best Cross-Functional Team Award", "by": "Dr. Reddy's", "date": "Feb 2019", "note": "For the SuCCEED quality culture and Manager Model Area work at the Duvvada site, which cleared the USFDA in 2018." },
-    { "name": "Certificate of Excellence, SuCCEED Quality Culture Transformation", "by": "Dr. Reddy's", "date": "Nov 2018", "note": "" },
-    { "name": "Appreciation from Neutec Inhaler (Turkey) and Actavis senior management (New Jersey, USA)", "by": "Neutec Inhaler / Actavis", "date": "Aug 2015", "note": "For on-time completion of the HVAC revamp project." },
-    { "name": "Best Work Team Award (quarterly), team 'STRIKER'", "by": "Dr. Reddy's", "date": "May 2012", "note": "Across all 7 formulation units." },
-    { "name": "Leadership Team 'BRAVO' Award", "by": "Dr. Reddy's", "date": "Feb 2010", "note": "For international regulatory audits (Germany, Brazil, USA) and the facility renovation project." },
-    { "name": "Chairman's Excellence Special Recognition Award", "by": "Dr. Reddy's", "date": "Dec 2009", "note": "USFDA compliance with zero observations." }
+    {
+      "name": "Indian Achievers Award",
+      "by": "Indian Achievers Forum",
+      "date": "Jul 2023",
+      "note": "For outstanding professional achievement and contribution to nation building."
+    },
+    {
+      "name": "Guest speaker, Pharma 4.0 Nexus",
+      "by": "BlueTech Media",
+      "date": "Mar 2024",
+      "note": "Panel on smart manufacturing, engineering design and predictive maintenance through IoT and data analytics."
+    },
+    {
+      "name": "Chairman Excellence — Best Cross-Functional Team Award",
+      "by": "Dr. Reddy's",
+      "date": "Feb 2019",
+      "note": "For the SuCCEED quality culture and Manager Model Area work at the Duvvada site, which cleared the USFDA in 2018."
+    },
+    {
+      "name": "Certificate of Excellence, SuCCEED Quality Culture Transformation",
+      "by": "Dr. Reddy's",
+      "date": "Nov 2018",
+      "note": ""
+    },
+    {
+      "name": "Appreciation from Neutec Inhaler (Turkey) and Actavis senior management (New Jersey, USA)",
+      "by": "Neutec Inhaler / Actavis",
+      "date": "Aug 2015",
+      "note": "For on-time completion of the HVAC revamp project."
+    },
+    {
+      "name": "Best Work Team Award (quarterly), team 'STRIKER'",
+      "by": "Dr. Reddy's",
+      "date": "May 2012",
+      "note": "Across all 7 formulation units."
+    },
+    {
+      "name": "Leadership Team 'BRAVO' Award",
+      "by": "Dr. Reddy's",
+      "date": "Feb 2010",
+      "note": "For international regulatory audits (Germany, Brazil, USA) and the facility renovation project."
+    },
+    {
+      "name": "Chairman's Excellence Special Recognition Award",
+      "by": "Dr. Reddy's",
+      "date": "Dec 2009",
+      "note": "USFDA compliance with zero observations."
+    }
   ],
-  "languages": ["English", "Hindi", "Marathi"]
+  "languages": [
+    "English",
+    "Hindi",
+    "Marathi"
+  ]
 }
